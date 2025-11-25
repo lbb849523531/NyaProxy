@@ -12,11 +12,11 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 # Install Python and build dependencies
 RUN apk add --no-cache \
-    python3=3.12.11-r0 \
+    python3=3 \
     py3-pip \
     gcc \
     musl-dev \
-    python3-dev=3.12.11-r0
+    python3-dev
 
 # Create and use a virtual environment
 RUN python3 -m venv /opt/venv
