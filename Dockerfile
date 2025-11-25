@@ -55,7 +55,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PATH="/opt/venv/bin:$PATH"
 
 # Install Python runtime only (no build tools)
-RUN apk add --no-cache python3=3.12.11-r0
+RUN apk add --no-cache python3
 
 # Create the same user in the runtime image
 RUN addgroup -S nya && \
