@@ -12,7 +12,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 # Install Python and build dependencies
 RUN apk add --no-cache \
-    python3=3 \
+    python3 \
     py3-pip \
     gcc \
     musl-dev \
