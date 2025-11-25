@@ -117,7 +117,7 @@ class AuthManager:
         Returns:
             bool: True if valid, False otherwise
         """
-        api_key = request.headers.get("Authorization", "")
+        api_key = request.headers.get("X-Goog-Api-Key", "")
         if api_key.startswith("Bearer "):
             api_key = api_key[7:]
 
