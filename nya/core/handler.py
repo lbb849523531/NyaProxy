@@ -175,7 +175,7 @@ class RequestHandler:
         Returns:
             str: API key for the request or None if not found
         """
-        authorization_header = request.headers.get("Authorization")
+        authorization_header = request.headers.get("X-Goog-Api-Key")
 
         return (
             authorization_header.split("Bearer ")[-1] if authorization_header else None
